@@ -4,19 +4,21 @@ const Wraper = styled.div``;
 /* ------------------------------------------- */
 const ImageWraper = styled.div`
   display: flex;
-  align-items: end;
-  justify-content: flex-end;
-  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 1rem 0;
   width: 100%;
-  /* height: 10%; */
   border: 0.5px solid rgba(255, 255, 255, 0.1);
-  padding: 7px;
+  /* padding: 7px; */
   border-radius: 8px;
 `;
 /* ------------------------------------------- */
 const Image = styled.img`
-  width: 100%;
+  width: ${({w})=>w};
   height: auto;
+  object-fit: contain;
   border-radius: 8px;
 `;
 /* ------------------------------------------- */

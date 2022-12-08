@@ -1,12 +1,12 @@
 import React from "react";
 import cpm from "./aboutCpm";
 
-function Heroimag() {
+function Heroimag({imagename,w}) {
   return (
     <>
       <cpm.ImageWraper>
         {/* <cpm.Image  src="/banner.webp" /> */}
-        <cpm.Image  src="/banner.jpg" />
+        <cpm.Image  src={imagename} w={w} />
         {/* <cpm.Image  src="/heroImage.webp" /> */}
       </cpm.ImageWraper>
     </>
