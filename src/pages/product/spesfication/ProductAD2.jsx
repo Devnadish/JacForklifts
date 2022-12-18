@@ -1,8 +1,9 @@
 import React from "react";
 
 function ProductAD2() {
+  
   return (
-    <div>
+    <div> 
       <table cellPadding="1" cellSpacing="1">
         
         <tbody>
