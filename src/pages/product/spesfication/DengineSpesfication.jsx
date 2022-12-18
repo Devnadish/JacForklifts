@@ -8,7 +8,7 @@ function DengineSpesfication() {
         <strong>1-1.8T Diesel Engine Specifications </strong>
       </p>
       <div >
-        <table cellpadding="1" cellspacing="1">
+        <table cellPadding="1" cellSpacing="1">
           <tbody>
             <tr >
               <td>Model</td>
@@ -85,7 +85,7 @@ function DengineSpesfication() {
         <strong>2-3.5T Diesel Engine Specifications</strong>
       </p>
       <div  >
-        <table  cellpadding="1" cellspacing="1">
+        <table  cellPadding="1" cellSpacing="1">
           <tbody>
             <tr >
               <td>Model</td>
@@ -183,7 +183,7 @@ function DengineSpesfication() {
         <strong>4-4.5T Diesel Engine Specifications</strong>
       </p>
       <div >
-        <table   cellpadding="1" cellspacing="1">
+        <table   cellPadding="1" cellSpacing="1">
           <tbody>
             <tr >
               <td>Model</td>
@@ -248,7 +248,7 @@ function DengineSpesfication() {
         <strong>5-10T Diesel Engine Specifications</strong>
       </p>
       <div >
-        <table   cellpadding="1" cellspacing="1">
+        <table   cellPadding="1" cellSpacing="1">
           <tbody>
             <tr >
               <td>Model</td>

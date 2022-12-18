@@ -19,8 +19,9 @@ import Dezelengine from "./Dezelengine"
 
 
 
-export default function Prodct() {
+export default function Prodct({language}) {
   const [toggleProduct, setToggleProduct] = useState(0);
+  
 
   return (
     <>
@@ -30,11 +31,11 @@ export default function Prodct() {
         <cpm.CardWrapper>
           {toggleProduct === 0 && (
             <>
-              <DeselProduct /> <ElectricProduct />
+              <DeselProduct language={language}/> <ElectricProduct language={language} />
             </>
           )}
-          {toggleProduct === 1 && <DeselProduct />}
-          {toggleProduct === 2 && <ElectricProduct />}
+          {toggleProduct === 1 && <DeselProduct language={language} />}
+          {toggleProduct === 2 && <ElectricProduct language={language} />}
           {toggleProduct === 3 && <Engine />}
         </cpm.CardWrapper>
       </cpm.Container>
@@ -73,9 +74,11 @@ const BtnControl = ({ setToggleProduct }) => {
     </>
   );
 };
-const DeselProduct = () => {
-  const  { t } = useTranslation();
 
+const DeselProduct = ({language}) => {
+  const  { t } = useTranslation();
+  console.log("product language ",language)
+  
   return (
     <>
       {/* --------------Loop For Desel Product ---------------------- */}
@@ -83,13 +86,15 @@ const DeselProduct = () => {
       {diselProduct.map((el, idx) => {
         const Dimage = `/assets/product/${el}/1.jpg`;
         const Dtitle = `${el}.subtitle`;
+        const Edescription = `${el}.Edescription`;
         return (
           <React.Fragment key={el.id}>
             <MyCard
               image={el.Image}
               subtitle={el.name}
-              hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=1`}
+              hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=1&language=${language}`}
               gazoline={t("deselF")}
+              description={language === "en" ? el.Edescription:el.Adescription}
             />
           </React.Fragment>
         );
@@ -99,7 +104,7 @@ const DeselProduct = () => {
 };
 
 
-const ElectricProduct = () => {
+const ElectricProduct = ({language}) => {
   const { t } = useTranslation();
 
   return (
@@ -116,6 +121,7 @@ const ElectricProduct = () => {
               subtitle={el.name}
               hrefLink={`/product/${el.directory}/${el.imageCount}?model=${el.name}&typex=2`}
               gazoline={t("electF")}
+              description={language === "en" ? el.Edescription:el.Adescription}
             />
           </React.Fragment>
         );
@@ -174,9 +180,17 @@ const MyCard = ({ image, title, subtitle, description, hrefLink ,gazoline}) => {
               variant="body2"
               textAlign={"center"}
               color="text.secondary"
-              sx={{ fontFamily: "tb" }}
+              sx={{ fontFamily: "tb" ,borderBottom:"2px solid rgba(0,0,0,.1)",mb:1}}
             >
               {subtitle}
+            </Typography>
+            <Typography
+              variant="body2"
+              textAlign={"center"}
+              color="text.secondary"
+              sx={{ fontFamily: "tb" }}
+            >
+              {description}
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -104,7 +104,7 @@ const TableVeiw = () => {
           <td rowSpan="7"> Performance </td>
           <td rowSpan="2">
             <br />
-            Maximum travel speed{" "}
+            Maximum travel speed
           </td>
           <td> Full load </td>
           <td>km/h</td>
@@ -120,7 +120,7 @@ const TableVeiw = () => {
         <tr>
           <td rowSpan="2">
             <br />
-            Maximum lift speed{" "}
+            Maximum lift speed
           </td>
           <td> Full load </td>
           <td>mm/s</td>
@@ -136,7 +136,7 @@ const TableVeiw = () => {
         <tr>
           <td rowSpan="2">
             <br />
-            Maximum lowering speed{" "}
+            Maximum lowering speed
           </td>
           <td> Full load </td>
           <td>mm/s</td>

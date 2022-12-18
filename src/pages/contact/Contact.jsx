@@ -3,6 +3,7 @@ import cpm from "./cpmContact";
 import { BiMailSend } from "react-icons/bi";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
+import Footer  from "../../component/footer/Footer";
 function Contact() {
   const { t } = useTranslation();
   const [mail, setMail] = useState("");
@@ -95,6 +96,7 @@ console.log(config)
             <>{t("sendBtn")}</>
             <BiMailSend size={"1.5rem"} />
           </cpm.SendBtn>
+           <Footer />
         </cpm.Wraper>
       </form>
     </>

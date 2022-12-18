@@ -83,13 +83,13 @@ function App() {
                         <Route index element={<About />} />
                         <Route path="about" element={<About />} />
                         <Route path="contact" element={<Contact />} />
-                        <Route path="product" element={<Product />} />
+                        <Route path="product" element={<Product  language={language} />} />
                         <Route path="dezelengine" element={<DezelEngine />} />
                         <Route path="gezelengine" element={<GezelEngine />} />
                         
                         <Route
                           path="product/:id/:filesNO"
-                          element={<ProductId />}
+                          element={<ProductId language={language} />}
                         />
                         <Route path="accessory" element={<Accessory />} />
                         <Route path="*" element={<PageNotFound />} />
@@ -97,7 +97,7 @@ function App() {
                     </Routes>
                     </Rescroll>
                   </Suspense>
-                  <Footer />
+                  {/* <Footer /> */}
                 </cpm.BodyWrapper>
               </HashRouter>
        

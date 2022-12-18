@@ -17,11 +17,16 @@ import i18n from "../../i18n";
 const LogoWraper = styled.div`
 max-width: 300px;
 width:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* border:1px solid; */
 /* height: 60px; */
 position: relative;;
-background-image: url("/jaclogo.svg");
+background-image: url("/jaclogo.png");
 background-repeat: no-repeat;
 background-size: contain;
+background-position: center;
 `;
 
 

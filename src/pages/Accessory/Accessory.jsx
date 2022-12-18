@@ -72,6 +72,18 @@ function Accessory() {
         <ImgWraper>
           <Image src={"/assets/product/Accessory/12.png"} loading="lazy"/>
         </ImgWraper>
+        <ImgWraper>
+          <Image src={"/assets/product/Accessory/13.png"} loading="lazy"/>
+        </ImgWraper>
+        <ImgWraper>
+          <Image src={"/assets/product/Accessory/14.png"} loading="lazy"/>
+        </ImgWraper>
+        <ImgWraper>
+          <Image src={"/assets/product/Accessory/15.png"} loading="lazy"/>
+        </ImgWraper>
+        <ImgWraper>
+          <Image src={"/assets/product/Accessory/16.png"} loading="lazy"/>
+        </ImgWraper>
       </Wraper>
     </>
   );

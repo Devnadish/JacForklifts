@@ -9,17 +9,27 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 
 import Loader from "../../component/loader/Loader";
 
-function ProductId() {
+function ProductId({ language}) {
   const [search, setSearchParams] = useSearchParams();
   const [Stype, setStype] = useSearchParams();
+  const [Slanguage, setLanguageStype] = useSearchParams();
   const modelx = search.get("model");
   const typex = Stype.get("typex");
+  const langx = Stype.get("Slanguage");
   const { t } = useTranslation();
   const PX = useParams();
 
-  const Tablex = lazy(() =>
+  let Tablex;
+  if (language === "en"){
+     Tablex = lazy(() =>
     import(`../product/spesfication/Product${PX.id}.jsx`)
   );
+  }else{
+     Tablex = lazy(() =>
+    import(`../product/spesfication/ProductA${PX.id}.jsx`)
+  );
+  }
+  
 
   /* ----------create file names in array------------------------------------------------------------ */
   // const locWork = locDir.toUpperCase();

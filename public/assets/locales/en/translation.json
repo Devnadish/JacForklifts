@@ -15,7 +15,7 @@
   "whatsApp":"WhatsApp",
   "msg":"Message",
   "sendBtn":"Send",
-  "footerData":"Saeed AlKhuraimi Trading Ees  is the exclusive dealer of JAC vehicles in the Kingdom of Saudi Arabia. Through our extensive network, we provide a superior dealership experience.",
+  "footerData":"Saeed AlKhuraimi Trading Est  is the exclusive dealer of JAC vehicles in the Kingdom of Saudi Arabia. Through our extensive network, we provide a superior dealership experience.",
   "contactInfo":"PO.BOX :6164   Zip Code : 21442",
   "contactPhone":"Land: 0122899915  Mobile: 0505622380",
   "engine":"Engine",
@@ -24,15 +24,13 @@
   "qasem":"Al-Qassim Al-Dulaima",
   "qasemAdr":"Ibrahim Saleh Al-Harbi Transport Corporation",
   "qasemPhone":"Mobile: 0555150806 / 0505150806",
-"ryd":"Riyadh",
-"rydAdr":"Qamam Al-Qusour General Contracting Est. Mobile / 0542329273",
-"rydPhone":" Mobile: 0542329273",
+  "ryd":"Riyadh",
+  "rydAdr":"Qamam Al-Qusour General Contracting Est. Mobile / 0542329273",
+   "rydPhone":" Mobile: 0542329273",
 "mailconfirm":"Thank you .. We Will Contact You Soon ..",
-"accessory":"Accessory"
-
-  
-
-  
+"accessory":"Accessory",
+"selectBtn1":"AlKhuraimi Trading Est",
+"selectBtn2":"JAC Forklift"
 }
 
  

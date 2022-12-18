@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 
 const Wraper = styled.div``;
 /* ------------------------------------------- */
@@ -61,4 +61,36 @@ const Hr = styled.hr`
   margin-bottom: 1rem;
   border-color: rgba(255,255,255,.3);
 `;
-export default { Txt, Wraper, ImageWraper, Image, CardWrapper,SectionTitle,Hr };
+
+const selectBtnCss=css`
+  color:white;
+  border:0;
+  padding:.2rem 1rem ;
+  border-radius:4px;
+  width:80%;
+
+  font-size:.9rem;
+  @media (max-width: 500px) {
+    font-size:.7rem;
+   
+  }
+ 
+
+`;
+
+
+const SelectBtn1= styled.div`
+${selectBtnCss}
+ background-color:${({type})=>type ? "rgba(255,255,255,.1)":"transpernt" };
+ border-bottom:
+ ${({type})=>type ? "3px solid rgba(250,0,0,0.9)":"2px solid rgba(200,100,0,0.9)" };
+`;
+
+const SelectBtn2= styled.div`
+${selectBtnCss}
+ background-color:${({type})=>type ? "transpernt":"rgba(255,255,255,.1)" };
+ border-bottom:
+ ${({type})=>type ? "2px solid rgba(200,100,0,0.9)":"3px solid rgba(250,0,0,0.9)" };
+`;
+
+export default { Txt, Wraper, ImageWraper, Image, CardWrapper,SectionTitle,Hr,SelectBtn1,SelectBtn2 };

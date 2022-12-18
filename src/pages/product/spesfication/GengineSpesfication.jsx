@@ -8,7 +8,7 @@ function GengineSpesfication() {
         <strong>1-3.5T Petrol Engine Specifications </strong>
       </p>
       <div>
-        <table cellpadding="1" cellspacing="1">
+        <table cellPadding="1" cellSpacing="1">
           <tbody>
             <tr >
               <td>Model</td>
@@ -106,7 +106,7 @@ function GengineSpesfication() {
         <strong> 4-7T Petrol Engine Specifications</strong>
       </p>
       <div>
-        <table cellpadding="1" cellspacing="1">
+        <table cellPadding="1" cellSpacing="1">
           <tbody>
             <tr>
               <td>Model</td>
