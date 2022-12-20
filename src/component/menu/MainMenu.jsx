@@ -15,7 +15,7 @@ import armenuItem from "./arMenu.json";
 import styled from "styled-components";
 import i18n from "../../i18n";
 const LogoWraper = styled.div`
-max-width: 300px;
+max-width: 230px;
 width:100%;
 display: flex;
 align-items: center;

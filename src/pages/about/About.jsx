@@ -17,7 +17,7 @@ function About({ language }) {
         <cpm.Hr/>
         <Distributer/>
         <Heroimag imagename={"/DistributerMap1.png"} w={"70%"}/>
-        <Prodct />
+        {/* <Prodct /> */}
       </cpm.Wraper>
     </>
   );

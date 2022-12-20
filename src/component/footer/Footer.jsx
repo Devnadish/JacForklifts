@@ -10,7 +10,7 @@ function Footer() {
         <cpm.Txt>{t("footerData")}</cpm.Txt>
 
         <cpm.ImageWrpaer>
-          <cpm.Image src="whitelogo.png" />
+          <cpm.Image src="logo2.png" />
         </cpm.ImageWrpaer>
         <cpm.Txt>{t("contactInfo")}</cpm.Txt>
 

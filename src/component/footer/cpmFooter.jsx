@@ -27,7 +27,7 @@ const ImageWrpaer = styled.div`
   /* background-image:url("./whitelogo.png"); */
 `;
 const Image = styled.img`
-  width: 100px;
+  width: 80px;
   height: auto;
 `;
 
@@ -35,7 +35,7 @@ const Linemsg1 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 40px;
   background-color: green;
   border-radius: 8px;
@@ -60,6 +60,10 @@ const Linemsg2 = styled.div`
 `;
 
 const Agncy = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
   width: 60%;
   border-radius: 8px;
   padding: .5rem;

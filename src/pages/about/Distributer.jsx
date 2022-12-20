@@ -11,9 +11,9 @@ function Distributer() {
     <cpm.Agncy>
       <cpm.Linemsg1>{t("agent")}</cpm.Linemsg1>
       <cpm.Txt>{t("footerData")}</cpm.Txt>
-
+      <cpm.Txt>{t("forklifts")}</cpm.Txt>
       <cpm.ImageWrpaer>
-        <cpm.Image src="whitelogo.png" />
+        <cpm.Image src="logo2.png" />
       </cpm.ImageWrpaer>
       <cpm.Txt>{t("contactInfo")}</cpm.Txt>
 
